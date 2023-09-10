@@ -81,20 +81,6 @@ export class App extends Component {
     });
   };
 
-  handleClose = e => {
-    if (e.code === 'Escape') {
-      this.handleModalClose();
-    }
-  };
-
-  async componentDidMount() {
-    document.addEventListener('keydown', this.handleClose);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleClose);
-  }
-
   render() {
     return (
       <div
