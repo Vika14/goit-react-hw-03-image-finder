@@ -109,7 +109,7 @@ export class App extends Component {
           <Modal
             src={this.state.modalImg}
             alt={this.state.modalAlt}
-            handleClose={this.handleModalClose}
+            handleModalClose={this.handleModalClose}
           />
         ) : null}
       </div>
